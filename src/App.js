@@ -1,6 +1,7 @@
 import { Component } from "react";
 import "./App.css";
-// import HideButton from "./Components/HideButton";
+// import User from "./Components/User";
+import HideButton from "./Components/HideButton";
 import Users from "./Components/Users";
 
 class App extends Component {

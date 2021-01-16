@@ -21,7 +21,7 @@ class HideButton extends Component {
   render() {
     return (
       <div>
-        {this.state.visible ? this.state.visible : null}
+        {this.state.visible ? <Users /> : null}
         <button
           onClick={() => {
             this.setState({ visible: false });
