@@ -12,15 +12,6 @@ class User extends Component {
               <address>
                 <h1 className="user__Name">{user.login.username}</h1>
                 <img src={user.picture.thumbnail} className="user__Img"></img>
-                {/* <HideButton /> */}
-                {/* {this.state.visible ? {} : null}
-              <button
-                onClick={() => {
-                  this.setState({ visible: false });
-                }}
-              >
-                HIDE
-              </button> */}
               </address>
             </li>
           ))}

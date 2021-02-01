@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import HideButton from "./HideButton";
+// import HideButton from "./HideButton";
 
 class Users extends Component {
   constructor(props) {
@@ -15,20 +15,15 @@ class Users extends Component {
       .then((data) => this.setState({ users: data.results }));
   }
 
-  // makeInvisible = () => {
-  //   // console.log("button is working");
-  //   this.setState({
-  //     visible: false,
-  //   });
-  // };
+
 
   ///make another component for displaying the users
   //reccomend to keep digging into react js
   //name, thumbnail, show and hide the details
 
-  // componentDidUpdate(prevProps, prevState) {
-  //   console.log("Users ", this.state.users.results)
-  // }
+  componentDidUpdate(prevProps, prevState) {
+    console.log("Users ", this.state.users.results)
+  }
 
   render() {
     return (
@@ -40,14 +35,7 @@ class Users extends Component {
             <address>
               <h1 className="user__Name">{user.login.username}</h1>
               <img src={user.picture.thumbnail} className="user__Img"></img>
-              {/* {this.state.visible ? {} : null}
-              <button
-                onClick={() => {
-                  this.setState({ visible: false });
-                }}
-              >
-                HIDE
-              </button> */}
+
             </address>
           </li>
         ))}
