@@ -11,7 +11,7 @@ class User extends Component {
               <p className="gender__line">{user.gender}</p>
               <address>
                 <h1 className="user__Name">{user.login.username}</h1>
-                <img src={user.picture.thumbnail} className="user__Img"></img>
+                <img src={user.picture.thumbnail} className="user__Img"></img>+-
               </address>
             </li>
           ))}

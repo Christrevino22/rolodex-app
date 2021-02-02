@@ -15,14 +15,18 @@ class Users extends Component {
       .then((data) => this.setState({ users: data.results }));
   }
 
-
-
   ///make another component for displaying the users
   //reccomend to keep digging into react js
   //name, thumbnail, show and hide the details
 
+  // NEW TODOS TP FINISH THIS PROJECT
+  //ALL THIS HAS TO DO WITH PROPS!!!!!!!
+  //LOOK FURTHER INTO PROPS!!!!!!!F
+  //FIGURE OUT HOW TO MOVE OVER ALL THE USERS INTO ONE USER
+  //MAKE A BUTTON THAT HIDE AND SHOWS THE USERS
+
   componentDidUpdate(prevProps, prevState) {
-    console.log("Users ", this.state.users.results)
+    console.log("Users ", this.state.users.results);
   }
 
   render() {
@@ -35,7 +39,6 @@ class Users extends Component {
             <address>
               <h1 className="user__Name">{user.login.username}</h1>
               <img src={user.picture.thumbnail} className="user__Img"></img>
-
             </address>
           </li>
         ))}
