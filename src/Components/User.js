@@ -6,14 +6,7 @@ class User extends Component {
       <div>
         <ul>
           {this.state.users.map((user, indx) => (
-            <li key={indx}>
-              <h2 className="first__Name">{user.name.first}</h2>
-              <p className="gender__line">{user.gender}</p>
-              <address>
-                <h1 className="user__Name">{user.login.username}</h1>
-                <img src={user.picture.thumbnail} className="user__Img"></img>+-
-              </address>
-            </li>
+            <li key={indx}> {user} </li>
           ))}
         </ul>
         );

@@ -41,6 +41,7 @@ class Users extends Component {
               <img src={user.picture.thumbnail} className="user__Img"></img>
             </address>
           </li>
+          
         ))}
       </ul>
     );
